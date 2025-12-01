@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflections - Brian K Photography</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+</head>
+<body class="landscape-page">
+    
+    <header>
+        <nav>
+            <h1>Brian K Photography</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="landscape.html">Landscape</a></li>
+                <li><a href="reflections.html">Reflections</a></li>
+                <li><button id="contrast-toggle" aria-label="Toggle high contrast mode">High Contrast</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" style="display: flex; flex-direction: column; align-items: center;">
+        <section class="hero">
+            <h2>Reflections Photography</h2>
+            <p>Exploring the world through mirrors and water</p>
+        </section>
+
+        <section id="featured-display" class="featured-image" style="display: none;">
+            <img id="featured-img" src="" alt="">
+            <div class="featured-description">
+                <h3 id="featured-title"></h3>
+                <p id="featured-text"></p>
+            </div>
+        </section>
+
+        <section class="gallery gallery-3col" aria-label="Reflections photo gallery">
+            <div class="gallery-item" tabindex="0" data-title="Sphere on Stone" data-description="A clear glass sphere rests on textured concrete, capturing and distorting the world around it in miniature.">
+                <img src="images/reflections/ref1.jpeg" alt="Clear glass sphere resting on a textured concrete surface, viewed from above">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Winter's Crystal" data-description="Against a snowy backdrop, the glass sphere becomes a frozen crystal, reflecting the cold beauty of winter.">
+                <img src="images/reflections/ref2.jpeg" alt="Glass sphere placed outside on snowy ground with buildings blurred in the background">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Shadow and Light" data-description="The interplay of the sphere and its shadow creates a study in contrast, geometry, and the nature of light.">
+                <img src="images/reflections/ref3.jpeg" alt="Overhead view of a glass sphere on a snowy or concrete surface, with a distinct shadow">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Circle's Echo" data-description="A perfect circular shadow echoes the sphere's form, creating a meditative composition of shape and reflection.">
+                <img src="images/reflections/ref4.jpeg" alt="Close-up top-down view of a glass sphere creating a circular shadow on concrete">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Liquid Mirror" data-description="Water droplets on the surface create an ever-changing mirror, capturing fleeting moments of reflection and distortion.">
+                <img src="images/reflections/ref5.jpeg" alt="Glass sphere on a wet surface, reflecting its environment and casting a shadow">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Solitary Sphere" data-description="Alone on a smooth surface, the small sphere invites contemplation of scale, isolation, and perspective.">
+                <img src="images/reflections/ref6.jpeg" alt="Small glass sphere alone on a smooth, lightly textured outdoor surface">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Cursive Curves" data-description="Handwritten words dance across the curved surface, transforming familiar script into abstract art through reflection.">
+                <img src="images/reflections/ref7.jpeg" alt="Handwritten cursive text reflected and distorted on a curved, shiny surface">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Written Reflections" data-description="The sphere captures fragments of written words, creating a dialogue between the permanence of text and the fluidity of reflection.">
+                <img src="images/reflections/ref8.jpeg" alt="Close-up of handwritten cursive text on lined paper, partially reflected in a sphere">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Reflected Branches" data-description="Tree branches find new life in puddles of water, creating nature's own abstract artwork on the concrete canvas.">
+                <img src="images/reflections/ref9.jpeg" alt="Concrete pavement with reflections of tree branches visible in puddles of water">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Tree Reflections" data-description="A single tree's reflection in water offers a mirror image of nature, inviting us to see familiar forms in new ways.">
+                <img src="images/reflections/ref10.jpeg" alt="Concrete pavement with a reflection of a tree visible in puddles of water">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Reflected Tree" data-description="Multiple tree reflections merge and overlap in puddles, creating a complex tapestry of nature's patterns.">
+                <img src="images/reflections/ref11.jpeg" alt="Concrete pavement with two reflections of trees visible in puddles of water">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Waterside Whispers" data-description="Dry grasses frame the water's edge, where the boundary between land and reflection becomes a space of quiet beauty.">
+                <img src="images/reflections/ref12.jpeg" alt="Natural scene with tall dry grasses along the edge of a pond or lake, water in background">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Brian K Photography</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="dist/js/lightbox.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

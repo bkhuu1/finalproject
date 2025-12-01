@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscape - Brian K Photography</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+</head>
+<body class="landscape-page">
+    
+    <header>
+        <nav>
+            <h1>Brian K Photography</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="landscape.html">Landscape</a></li>
+                <li><a href="reflections.html">Reflections</a></li>
+                <li><button id="contrast-toggle" aria-label="Toggle high contrast mode">High Contrast</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" style="display: flex; flex-direction: column; align-items: center;">
+        <section class="hero">
+            <h2>Landscape Photography</h2>
+            <p>Capturing the beauty of natural landscapes</p>
+        </section>
+
+        <section id="featured-display" class="featured-image" style="display: none;">
+            <img id="featured-img" src="" alt="">
+            <div class="featured-description">
+                <h3 id="featured-title"></h3>
+                <p id="featured-text"></p>
+            </div>
+        </section>
+
+        <section class="gallery gallery-3col" aria-label="Landscape photo gallery">
+            <div class="gallery-item" tabindex="0" data-title="Golden Blooms" data-description="A vibrant cluster of yellow flowers captures the essence of spring, bringing warmth and joy to the natural landscape.">
+                <img src="images/landscape/landscape1.jpeg" alt="Close-up of bright yellow flowers clustered together in a natural outdoor setting">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Garden Retreat" data-description="A peaceful bench nestled in greenery invites visitors to pause, reflect, and enjoy the serenity of nature.">
+                <img src="images/landscape/landscape2.jpeg" alt="Wooden bench situated in a landscaped garden area surrounded by greenery">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Pathway Through Blooms" data-description="A winding path through carefully tended gardens showcases the harmony between human design and natural beauty.">
+                <img src="images/landscape/landscape3.jpeg" alt="Pathway bordered by flower beds and shrubs in a park-like garden">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Open Meadow" data-description="An expansive field framed by trees offers a sense of freedom and tranquility, a perfect escape from urban life.">
+                <img src="images/landscape/landscape4.jpeg" alt="Expansive grassy field with trees framing the open space on either side">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Dancing Grass" data-description="Tall wild grass sways gently in the breeze, creating a mesmerizing dance of nature's simple elegance.">
+                <img src="images/landscape/landscape5.jpeg" alt="Green grassy patch with tall wild grass gently swaying in the breeze">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Woodland Edge" data-description="Where the open lawn meets the dense forest, nature creates a beautiful transition between light and shadow.">
+                <img src="images/landscape/landscape6.jpeg" alt="Open lawn area with dense trees and bushes in the background">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Descending Path" data-description="A wooden boardwalk winds through lush greenery, inviting exploration and discovery in the natural world.">
+                <img src="images/landscape/landscape7.jpeg" alt="Wooden boardwalk or path leading uphill through lush greenery and trees">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Forest Library" data-description="A Little Free Library stands quietly among fallen trees, a testament to community and the enduring power of shared stories in unexpected places.">
+                <img src="images/landscape/landscape8.jpeg" alt="A small Little Free Library surrounded by fallen trees in a wooded area">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Cathedral of Pines" data-description="Tall pine trees create a natural cathedral where dim light filters through, evoking a sense of reverence and peace.">
+                <img src="images/landscape/landscape9.jpeg" alt="Shaded forest scene with tall pine trees and dim light filtering through">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Solitary Bloom" data-description="A single purple wildflower stands alone among the grass, a quiet reminder of nature's resilience and beauty in simplicity.">
+                <img src="images/landscape/landscape10.jpeg" alt="Patch of grass with a single light purple wildflower growing among the blades">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Field of Gold" data-description="Yellow wildflowers dot the grassy field, creating a golden tapestry that celebrates the abundance of nature.">
+                <img src="images/landscape/landscape11.jpeg" alt="Grassy field featuring clusters of yellow wildflowers and taller grass">
+            </div>
+            <div class="gallery-item" tabindex="0" data-title="Open Field" data-description="A scenic landscape under cloudy skies captures the ever-changing moods of nature, from bright to contemplative.">
+                <img src="images/landscape/landscape12.jpeg" alt="Scenic view of an open grassy landscape bordered by trees under a cloudy sky">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Brian K Photography</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="dist/js/lightbox.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
