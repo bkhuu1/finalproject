@@ -62,7 +62,11 @@ document.addEventListener('DOMContentLoaded', function() {
             featuredText.textContent = description;
 
             featuredDisplay.style.display = 'block';
-            featuredDisplay.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            featuredDisplay.scrollIntoView({ 
+                behavior: prefersReducedMotion ? 'auto' : 'smooth', 
+                block: 'start' 
+            });
         }
 
         landscapeItems.forEach(item => {
