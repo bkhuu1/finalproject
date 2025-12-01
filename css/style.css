@@ -1,0 +1,337 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/home/portfoliobackground.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 12px 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+nav h1 {
+    margin: 0;
+    color: #fff;
+    font-family: "Baskerville", "Baskerville Old Face", "Georgia", serif;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 1;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.hero {
+    display: inline-block;
+    text-align: center;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 20px;
+    border-radius: 8px;
+    max-width: fit-content;
+}
+
+.hero h2 {
+    margin: 0 0 8px 0;
+    line-height: 1.05;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.hero p {
+    margin: 0;
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+body.landscape-page .gallery-item:hover {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+body.landscape-page .gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-3col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.filter-controls {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.filter-btn {
+    padding: 12px 24px;
+    margin: 0 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.filter-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-btn.active {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.gallery-item.hidden {
+    display: none;
+}
+
+.featured-image {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.featured-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    display: block;
+}
+
+.featured-description {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    margin-top: 0;
+}
+
+.featured-description h3 {
+    color: white;
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.featured-description p {
+    color: white;
+    margin: 0;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+body.high-contrast .featured-description {
+    background-color: #000;
+    border: 2px solid #fff;
+    border-top: none;
+}
+
+@media (max-width: 960px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        padding: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 12px;
+    }
+
+    nav {
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 12px;
+    }
+
+    nav h1 {
+        font-size: 1.9rem;
+        margin: 0;
+        line-height: 1;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        padding: 10px 14px;
+        font-size: 1rem;
+        border-radius: 8px;
+        white-space: nowrap;
+    }
+
+    .gallery, .gallery-3col {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery, .gallery-3col {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 16px;
+    }
+}
+
+#contrast-toggle {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+#contrast-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+body.high-contrast {
+    background-color: #000;
+    background-image: none;
+}
+
+body.high-contrast header {
+    background-color: #000;
+    border-bottom: 3px solid #fff;
+}
+
+body.high-contrast nav h1,
+body.high-contrast nav ul li a,
+body.high-contrast .hero h2,
+body.high-contrast .hero p,
+body.high-contrast footer p {
+    color: #fff;
+}
+
+body.high-contrast nav ul li a {
+    background-color: #000;
+    border: 2px solid #fff;
+}
+
+body.high-contrast nav ul li a:hover,
+body.high-contrast nav ul li a:focus {
+    background-color: #fff;
+    color: #000;
+}
+
+body.high-contrast .filter-btn {
+    background-color: #000;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+body.high-contrast .filter-btn:hover,
+body.high-contrast .filter-btn.active {
+    background-color: #fff;
+    color: #000;
+}
+
+body.high-contrast .gallery-item {
+    background-color: #000;
+    border: 2px solid #fff;
+}
+
+body.high-contrast #contrast-toggle {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+body.landscape-page .gallery-item {
+    cursor: pointer;
+}
+
