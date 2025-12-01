@@ -335,3 +335,27 @@ body.landscape-page .gallery-item {
     cursor: pointer;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms;
+        animation-iteration-count: 1;
+        transition-duration: 0.01ms;
+    }
+    
+    body.landscape-page .gallery-item:hover {
+        transform: none;
+    }
+    
+    body.landscape-page .gallery-item img:hover {
+        transform: none;
+    }
+    
+    .gallery-item img:hover {
+        transform: none;
+    }
+    
+    .featured-display {
+        scroll-behavior: auto;
+    }
+}
+
