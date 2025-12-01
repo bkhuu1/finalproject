@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Portfolio - Brian K</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="dist/css/lightbox.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <h1>Brian K Photography</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="landscape.html">Landscape</a></li>
+                <li><a href="reflections.html">Reflections</a></li>
+                <li><button id="contrast-toggle" aria-label="Toggle high contrast mode">High Contrast</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" style="display: flex; flex-direction: column; align-items: center;">
+        <section class="hero">
+            <h2>Exploring landscapes and reflections through photography</h2>
+        </section>
+
+        <section class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="landscape">Landscape</button>
+            <button class="filter-btn" data-filter="reflections">Reflections</button>
+        </section>
+
+        <section class="gallery" aria-label="Photo gallery">
+            <div class="gallery-item" data-category="landscape">
+                <a href="images/landscape/landscape1.jpeg" data-lightbox="portfolio" data-title="Golden Blooms">
+                    <img src="images/landscape/landscape1.jpeg" alt="Close-up of bright yellow flowers clustered together in a natural outdoor setting">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="landscape">
+                <a href="images/landscape/landscape2.jpeg" data-lightbox="portfolio" data-title="Garden Retreat">
+                    <img src="images/landscape/landscape2.jpeg" alt="Wooden bench situated in a landscaped garden area surrounded by greenery">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="landscape">
+                <a href="images/landscape/landscape3.jpeg" data-lightbox="portfolio" data-title="Pathway Through Blooms">
+                    <img src="images/landscape/landscape3.jpeg" alt="Pathway bordered by flower beds and shrubs in a park-like garden">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="landscape">
+                <a href="images/landscape/landscape4.jpeg" data-lightbox="portfolio" data-title="Open Meadow">
+                    <img src="images/landscape/landscape4.jpeg" alt="Expansive grassy field with trees framing the open space on either side">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="landscape">
+                <a href="images/landscape/landscape5.jpeg" data-lightbox="portfolio" data-title="Dancing Grass">
+                    <img src="images/landscape/landscape5.jpeg" alt="Green grassy patch with tall wild grass gently swaying in the breeze">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="landscape">
+                <a href="images/landscape/landscape6.jpeg" data-lightbox="portfolio" data-title="Woodland Edge">
+                    <img src="images/landscape/landscape6.jpeg" alt="Open lawn area with dense trees and bushes in the background">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="landscape">
+                <a href="images/landscape/landscape7.jpeg" data-lightbox="portfolio" data-title="Descending Path">
+                    <img src="images/landscape/landscape7.jpeg" alt="Wooden boardwalk or path leading uphill through lush greenery and trees">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="landscape">
+                <a href="images/landscape/landscape8.jpeg" data-lightbox="portfolio" data-title="Forest Library">
+                    <img src="images/landscape/landscape8.jpeg" alt="A small Little Free Library surrounded by fallen trees in a wooded area">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="landscape">
+                <a href="images/landscape/landscape9.jpeg" data-lightbox="portfolio" data-title="Cathedral of Pines">
+                    <img src="images/landscape/landscape9.jpeg" alt="Shaded forest scene with tall pine trees and dim light filtering through">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="landscape">
+                <a href="images/landscape/landscape10.jpeg" data-lightbox="portfolio" data-title="Solitary Bloom">
+                    <img src="images/landscape/landscape10.jpeg" alt="Patch of grass with a single light purple wildflower growing among the blades">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="landscape">
+                <a href="images/landscape/landscape11.jpeg" data-lightbox="portfolio" data-title="Field of Gold">
+                    <img src="images/landscape/landscape11.jpeg" alt="Grassy field featuring clusters of yellow wildflowers and taller grass">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="landscape">
+                <a href="images/landscape/landscape12.jpeg" data-lightbox="portfolio" data-title="Open Field">
+                    <img src="images/landscape/landscape12.jpeg" alt="Scenic view of an open grassy landscape bordered by trees under a cloudy sky">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="reflections">
+                <a href="images/reflections/ref1.jpeg" data-lightbox="portfolio" data-title="Sphere on Stone">
+                    <img src="images/reflections/ref1.jpeg" alt="Clear glass sphere resting on a textured concrete surface, viewed from above">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="reflections">
+                <a href="images/reflections/ref2.jpeg" data-lightbox="portfolio" data-title="Winter's Crystal">
+                    <img src="images/reflections/ref2.jpeg" alt="Glass sphere placed outside on snowy ground with buildings blurred in the background">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="reflections">
+                <a href="images/reflections/ref3.jpeg" data-lightbox="portfolio" data-title="Shadow and Light">
+                    <img src="images/reflections/ref3.jpeg" alt="Overhead view of a glass sphere on a snowy or concrete surface, with a distinct shadow">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="reflections">
+                <a href="images/reflections/ref4.jpeg" data-lightbox="portfolio" data-title="Circle's Echo">
+                    <img src="images/reflections/ref4.jpeg" alt="Close-up top-down view of a glass sphere creating a circular shadow on concrete">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="reflections">
+                <a href="images/reflections/ref5.jpeg" data-lightbox="portfolio" data-title="Liquid Mirror">
+                    <img src="images/reflections/ref5.jpeg" alt="Glass sphere on a wet surface, reflecting its environment and casting a shadow">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="reflections">
+                <a href="images/reflections/ref6.jpeg" data-lightbox="portfolio" data-title="Solitary Sphere">
+                    <img src="images/reflections/ref6.jpeg" alt="Small glass sphere alone on a smooth, lightly textured outdoor surface">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="reflections">
+                <a href="images/reflections/ref7.jpeg" data-lightbox="portfolio" data-title="Cursive Curves">
+                    <img src="images/reflections/ref7.jpeg" alt="Handwritten cursive text reflected and distorted on a curved, shiny surface">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="reflections">
+                <a href="images/reflections/ref8.jpeg" data-lightbox="portfolio" data-title="Written Reflections">
+                    <img src="images/reflections/ref8.jpeg" alt="Close-up of handwritten cursive text on lined paper, partially reflected in a sphere">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="reflections">
+                <a href="images/reflections/ref9.jpeg" data-lightbox="portfolio" data-title="Reflected branches">
+                    <img src="images/reflections/ref9.jpeg" alt="Concrete pavement with reflections of tree branches visible in puddles of water">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="reflections">
+                <a href="images/reflections/ref10.jpeg" data-lightbox="portfolio" data-title="Tree Reflections">
+                    <img src="images/reflections/ref10.jpeg" alt="Concrete pavement with a reflection of a tree visible in puddles of water">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="reflections">
+                <a href="images/reflections/ref11.jpeg" data-lightbox="portfolio" data-title="Reflected Tree">
+                    <img src="images/reflections/ref11.jpeg" alt="Concrete pavement with two reflections of trees visible in puddles of water">
+                </a>
+            </div>
+            <div class="gallery-item" data-category="reflections">
+                <a href="images/reflections/ref12.jpeg" data-lightbox="portfolio" data-title="Waterside Whispers">
+                    <img src="images/reflections/ref12.jpeg" alt="Natural scene with tall dry grasses along the edge of a pond or lake, water in background">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Brian K Photography</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="dist/js/lightbox.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
